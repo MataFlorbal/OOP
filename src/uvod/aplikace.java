@@ -7,7 +7,7 @@ public class aplikace {
         a1.barva = "modrá";
         a1.jePojizdne = true;
         a1.maxRychlost = 200;
-        a1.aktualniRychlost = 20;
+        a1.aktualniRychlost = 120;
 
         auto a2 = new auto();
         a2.nazev = "plechovka";
@@ -18,11 +18,18 @@ public class aplikace {
 
         a1.vypisInfo();
         a2.vypisInfo();
+            System.out.println("");
         a1.stav();
         a2.stav();
-
+            System.out.println("");
         a1.nastartuj();
         a1.zrychli(10);
+        a1.stav();
+            System.out.println("");
+        a1.zpomal(80);
+        a1.stav();
+            System.out.println("");
+        a1.vypniMotor();
         a1.stav();
     }
 }

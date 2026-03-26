@@ -30,10 +30,32 @@ public class auto {
     }
     public void zrychli(int kolik){
         if (!jeNastartovane){
-            System.out.println("Nejdriv nastartuj");
+            System.out.println("Nejdriv nastartuj, nez budes zrychlovat");
         }
         else {
             aktualniRychlost += kolik;
+        }
+        if (aktualniRychlost > maxRychlost){
+            jeNastartovane = false;
+            jePojizdne = false;
+            aktualniRychlost = 0;
+            System.out.println("auto se rozbilo, kvuli presazene rychlosti");
+        }
+    }
+    public void zpomal(int kolik){
+        aktualniRychlost -= kolik;
+        if (aktualniRychlost <= 0){
+            aktualniRychlost = 0;
+            System.out.println("nemuzes zpomalit do minusu");
+        }
+    }
+    public void vypniMotor(){
+        if (aktualniRychlost > 0){
+            System.out.println("nejprve zastav, abys mohl vypnout motor");
+        }
+        else{
+            jeNastartovane = false;
+            System.out.println("vypnul jsem motor");
         }
     }
 }
