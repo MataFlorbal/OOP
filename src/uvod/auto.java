@@ -58,4 +58,25 @@ public class auto {
             System.out.println("vypnul jsem motor");
         }
     }
+    public void zatrub(){
+        System.out.println("Túúú, túúú!");
+    }
+    public auto (){}
+    public auto (String nazev){
+        this.nazev = nazev;
+    }
+    public auto (String nazev, String barva){
+        this(nazev);
+        this.barva = barva;
+    }
+    public auto (String nazev, int maxRychlost){
+        this(nazev);
+        this.maxRychlost = maxRychlost;
+    }
+    public auto (String nazev, String barva, int maxRychlost, int aktualniRychlost, boolean jePojizdne){
+        this(nazev, barva);
+        this.maxRychlost = maxRychlost;
+        this.aktualniRychlost = aktualniRychlost;
+        this.jePojizdne = jePojizdne;
+    }
 }

@@ -2,12 +2,7 @@ package uvod;
 
 public class aplikace {
     public static void main(String[] args) {
-        auto a1 = new auto();
-        a1.nazev = "bourák";
-        a1.barva = "modrá";
-        a1.jePojizdne = true;
-        a1.maxRychlost = 200;
-        a1.aktualniRychlost = 120;
+        auto a1 = new auto("bourák","modrá",200,120,true);
 
         auto a2 = new auto();
         a2.nazev = "plechovka";
@@ -31,5 +26,7 @@ public class aplikace {
             System.out.println("");
         a1.vypniMotor();
         a1.stav();
+            System.out.println("");
+        a1.zatrub();
     }
 }
