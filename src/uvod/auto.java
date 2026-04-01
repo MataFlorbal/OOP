@@ -79,4 +79,10 @@ public class auto {
         this.aktualniRychlost = aktualniRychlost;
         this.jePojizdne = jePojizdne;
     }
+    void setMaxRychlost(int maxRychlost){
+        this.maxRychlost = maxRychlost;
+    }
+    int getMaxRychlost(){
+        return this.maxRychlost;
+    }
 }

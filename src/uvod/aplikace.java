@@ -8,8 +8,10 @@ public class aplikace {
         a2.nazev = "plechovka";
         a2.barva = "červená";
         a2.jePojizdne = true;
-        a2.maxRychlost = 80;
+        a2.setMaxRychlost(80);
         a2.aktualniRychlost = 0;
+
+        System.out.println(a2.getMaxRychlost());
 
         a1.vypisInfo();
         a2.vypisInfo();
