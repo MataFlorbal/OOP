@@ -11,24 +11,25 @@ public class aplikace {
         a2.setMaxRychlost(80);
         a2.aktualniRychlost = 0;
 
+        Garaz g1 = new Garaz(1);
+        g1.id = "Garáž č. 1";
+        g1.zaparkuj(a1);
+        g1.zaparkuj(a2);
+        g1.info();
+
         System.out.println(a2.getMaxRychlost());
 
         a1.vypisInfo();
         a2.vypisInfo();
-            System.out.println("");
         a1.stav();
         a2.stav();
-            System.out.println("");
         a1.nastartuj();
         a1.zrychli(10);
         a1.stav();
-            System.out.println("");
         a1.zpomal(80);
         a1.stav();
-            System.out.println("");
         a1.vypniMotor();
         a1.stav();
-            System.out.println("");
         a1.zatrub();
     }
 }

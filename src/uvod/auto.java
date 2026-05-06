@@ -23,6 +23,7 @@ public class auto {
         }
         else{
             System.out.println("jedu rychlostí " + aktualniRychlost + "km/h");
+            System.out.println("");
         }
     }
     public void nastartuj(){
