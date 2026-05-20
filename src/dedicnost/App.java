@@ -12,5 +12,13 @@ public class App {
         Papousek kiko = new Papousek("Kiko");
         kiko.let(10);
         kiko.vydejZvuk();
+
+        Dum ledecka = new Dum("ledecka");
+        ledecka.ubytujSe(kiko);
+        ledecka.ubytujSe(bohm);
+        ledecka.odejdi(kiko);
+        ledecka.ubytovani.add(kiko);
+        ledecka.ubytovani.remove(kiko);
+        ledecka.vypisZvirata();
     }
 }
